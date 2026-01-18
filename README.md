@@ -85,4 +85,23 @@ Utilize o wrapper do Maven incluído no projeto:
 ./mvnw clean spring-boot:run
 ```
 
-O servidor iniciará (geralmente na porta 8080) e estará pronto para aceitar conexões de clientes MCP no endpoint configurado (padrão `/mcp/sse`).# spring-ai-mcpserver-mysqldb
+O servidor iniciará (geralmente na porta 8080) e estará pronto para aceitar conexões de clientes MCP no endpoint configurado (padrão `/mcp/message`).
+
+---
+
+## 🧪 Testando com Postman
+
+O Postman oferece suporte para conectar e testar servidores MCP. Isso permite visualizar as capacidades do servidor (ferramentas, recursos e prompts) e interagir com elas diretamente através de uma interface gráfica.
+
+### Passos para testar:
+
+1.  Certifique-se de que a aplicação está rodando.
+2.  Abra o Postman.
+3.  Utilize a funcionalidade de conexão MCP (MCP Client).
+4.  Configure o transporte como **SSE**.
+5.  Insira a URL do servidor: `http://localhost:8080/sse` (ou a porta que estiver utilizando).
+6.  Conecte-se.
+
+Após conectar, você poderá ver a lista de ferramentas e recursos disponíveis e invocá-los para testar o funcionamento.
+
+![Postman MCP Server](postman/postman-mcpserver.png)
