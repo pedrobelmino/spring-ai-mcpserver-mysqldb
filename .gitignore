@@ -1,0 +1,56 @@
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+*.iml
+.idea/
+out/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment
+docker-compose/.env
+
+# Others
+*.swp
+*.swo
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Java
+*.class
+
+# Backup files
+*~
+
+# Build
+build/
+
+# Dependency directories
+node_modules/
+
+# JetBrains
+*.ipr
+*.iws
+
+# Test output
+/test-output/
+
+# Ignore jar files
+*.jar
