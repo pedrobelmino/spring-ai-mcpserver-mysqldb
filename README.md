@@ -65,9 +65,9 @@ Isso permite que uma IA conectada a este servidor responda perguntas como:
 ## 🛠️ Como Executar
 
 ### Pré-requisitos
-*   Java 17+
-*   Maven
-*   MySQL Server em execução
+*   Java 21 (fixado no `pom.xml` → `<java.version>21</java.version>`; o parent é Spring Boot 4.0.0)
+*   Maven — o wrapper `./mvnw` (Maven 3.9.6) já vem no repositório
+*   MySQL 8 em execução — ou o container de `docker-compose/docker-compose.yml`
 
 ### Configuração
 Configure as credenciais do banco no arquivo `src/main/resources/application.properties` (ou via variáveis de ambiente):
@@ -105,3 +105,9 @@ O Postman oferece suporte para conectar e testar servidores MCP. Isso permite vi
 Após conectar, você poderá ver a lista de ferramentas e recursos disponíveis e invocá-los para testar o funcionamento.
 
 ![Postman MCP Server](postman/postman-mcpserver.png)
+
+---
+
+## Licença
+
+MIT — veja [LICENSE](LICENSE).
